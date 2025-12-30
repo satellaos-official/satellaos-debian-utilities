@@ -1,16 +1,20 @@
 (English)
 
-This script uses the **Papirus Folders** infrastructure.  
-You can access the original project and support it here: [Papirus Folders GitHub](https://github.com/PapirusDevelopmentTeam/papirus-folders)
+# Papirus Color Changer Tool
 
 Just one click and change the papyrus color.
 
+This script uses the **Papirus Folders** infrastructure.  
+You can access the original project and support it here: [Papirus Folders GitHub](https://github.com/PapirusDevelopmentTeam/papirus-folders)
+
 (Turkish)
+
+# Papirus Renk Değiştirme Aracı
+
+Tek bir tıklamayla papirus rengini değiştirin.
 
 Bu script, **Papirus Folders** altyapısını kullanmaktadır.  
 Orijinal projeye ve destek olanaklarına şu linkten ulaşabilirsiniz: [Papirus Folders GitHub](https://github.com/PapirusDevelopmentTeam/papirus-folders)
-
-Tek bir tıklamayla papirüs rengini değiştirin.
 
 ```bash
 mkdir -p "$HOME/satellaos-debian-utilities/tools"
