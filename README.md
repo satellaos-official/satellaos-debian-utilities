@@ -7,6 +7,18 @@ Just one click and change the papyrus color.
 This script uses the **Papirus Folders** infrastructure.  
 You can access the original project and support it here: [Papirus Folders GitHub](https://github.com/PapirusDevelopmentTeam/papirus-folders)
 
+```bash
+mkdir -p "$HOME/satellaos-debian-utilities/tools"
+
+wget -P "$HOME/satellaos-debian-utilities/tools" "https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/tools/Papirus-color-changer-v2.sh"
+
+chmod +x "$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
+
+"$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
+
+rm -rf "$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
+```
+
 ## (Turkish)
 
 # Papirus Renk Değiştirme Aracı
