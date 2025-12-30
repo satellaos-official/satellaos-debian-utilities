@@ -112,3 +112,223 @@ EOF
 
 
 # Programs (Programlar)
+
+
+
+
+## 1. Google Chrome (Deb)
+
+```bash
+mkdir -p "$HOME/satellaos-packages"
+
+wget -P "$HOME/satellaos-packages" https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+sudo apt install -y "$HOME/satellaos-packages/google-chrome-stable_current_amd64.deb"
+```
+
+## 2. Opera (Deb)
+
+```bash
+mkdir -p "$HOME/satellaos-packages"
+
+wget -P "$HOME/satellaos-packages" https://download5.operacdn.com/ftp/pub/opera/desktop/125.0.5729.49/linux/opera-stable_125.0.5729.49_amd64.deb
+
+sudo apt install -y "$HOME/satellaos-packages/opera-stable_125.0.5729.49_amd64.deb"
+```
+
+## 3. Vivaldi (Deb)
+
+```bash
+mkdir -p "$HOME/satellaos-packages"
+
+wget -P "$HOME/satellaos-packages" https://downloads.vivaldi.com/stable/vivaldi-stable_7.7.3851.66-1_amd64.deb
+
+sudo apt install -y "$HOME/satellaos-packages/vivaldi-stable_7.7.3851.66-1_amd64.deb"
+```
+
+## 4. Brave Browser [Deb (Debian, Ubuntu, Mint)]
+
+```bash
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+sudo curl -fsSLo /etc/apt/sources.list.d/brave-browser-release.sources https://brave-browser-apt-release.s3.brave.com/brave-browser.sources
+
+sudo apt update
+
+sudo apt install -y brave-browser
+```
+
+## 5. Firefox ESR [Deb (Debian)]
+
+```bash
+sudo apt install -y firefox-esr
+```
+
+## 6. Steam (Deb)
+
+```bash
+mkdir -p "$HOME/satellaos-packages"
+
+wget -P "$HOME/satellaos-packages" https://repo.steampowered.com/steam/archive/precise/steam_latest.deb
+
+sudo apt install -y "$HOME/satellaos-packages/steam_latest.deb"
+```
+
+## 7. Free Download Manager (Deb)
+
+```bash
+mkdir -p "$HOME/satellaos-packages"
+
+wget -P "$HOME/satellaos-packages" https://files2.freedownloadmanager.org/6/latest/freedownloadmanager.deb
+
+sudo apt install -y "$HOME/satellaos-packages/freedownloadmanager.deb"
+```
+
+## 8. LocalSend (Deb)
+
+```bash
+mkdir -p "$HOME/satellaos-packages"
+
+wget -P "$HOME/satellaos-packages" https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-linux-x86-64.deb
+
+sudo apt install -y "$HOME/satellaos-packages/LocalSend-1.17.0-linux-x86-64.deb"
+```
+
+## 9. LocalSend (Flatpak)
+
+```bash
+flatpak install -y flathub org.localsend.localsend_app
+```
+
+## 10. KDiskMark (Deb)
+
+```bash
+mkdir -p "$HOME/satellaos-packages"
+
+wget -P "$HOME/satellaos-packages" https://github.com/JonMagon/KDiskMark/releases/download/3.2.0/kdiskmark_3.2.0_amd64.deb
+
+sudo apt install -y "$HOME/satellaos-packages/kdiskmark_3.2.0_amd64.deb"
+```
+
+## 11. KDiskMark (Flatpak)
+
+```bash
+flatpak install -y flathub io.github.jonmagon.kdiskmark
+```
+
+## 12. VirtualBox 7.2.4 [Deb (Debian 13)]
+
+```bash
+mkdir -p "$HOME/satellaos-packages"
+
+wget -P "$HOME/satellaos-packages" https://download.virtualbox.org/virtualbox/7.2.4/virtualbox-7.2_7.2.4-170995~Debian~trixie_amd64.deb
+
+sudo apt install -y "$HOME/satellaos-packages/virtualbox-7.2_7.2.4-170995~Debian~trixie_amd64.deb"
+
+wget -P "$HOME/satellaos-packages" https://download.virtualbox.org/virtualbox/7.2.4/Oracle_VirtualBox_Extension_Pack-7.2.4.vbox-extpack
+```
+
+## 13. GIMP (Deb)
+
+```bash
+sudo apt install -y gimp
+```
+
+## 14. GIMP (Flatpak)
+
+```bash
+flatpak install -y flathub org.gimp.GIMP
+```
+
+## 15. Pinta (Flatpak)
+
+```bash
+flatpak install -y flathub com.github.PintaProject.Pinta
+```
+
+## 16. PowerISO (Flatpak)
+
+```bash
+flatpak install -y flathub com.poweriso.PowerISO
+```
+
+## 17. MenuLibre (Deb)
+
+```bash
+sudo apt install -y menulibre
+```
+
+## 18. Sublime Text (Deb)
+
+```bash
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo tee /etc/apt/keyrings/sublimehq-pub.asc > /dev/null
+
+echo -e 'Types: deb\nURIs: https://download.sublimetext.com/\nSuites: apt/stable/\nSigned-By: /etc/apt/keyrings/sublimehq-pub.asc' | sudo tee /etc/apt/sources.list.d/sublime-text.sources
+
+sudo apt-get update
+
+sudo apt-get install -y sublime-text
+```
+
+## 19. WineHQ [Deb (Debian 13)]
+
+```bash
+sudo mkdir -pm755 /etc/apt/keyrings
+wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo gpg --dearmor -o /etc/apt/keyrings/winehq-archive.key -
+
+sudo dpkg --add-architecture i386
+
+sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/trixie/winehq-trixie.sources
+
+sudo apt update
+
+sudo apt install -y --install-recommends winehq-stable
+```
+
+## 20. Mission Center (Flatpak)
+
+```bash
+flatpak install -y flathub io.missioncenter.MissionCenter
+```
+
+## 21. GParted (Deb)
+
+```bash
+sudo apt install -y gparted
+```
+
+## 22. Gnome Disk Utility (Deb)
+
+```bash
+sudo apt install -y gnome-disk-utility
+```
+
+## 23. VLC (Deb)
+
+```bash
+sudo apt install -y vlc
+```
+
+## 24. qBittorrent (Deb)
+
+```bash
+sudo apt install -y qbittorrent
+```
+
+## 25. Grub Customizer (Deb)
+
+```bash
+sudo apt install -y grub-customizer
+```
+
+## 26. Galculator (Deb)
+
+```bash
+sudo apt install -y galculator
+```
+
+## 27. Gucharmap (Deb)
+
+```bash
+sudo apt install gucharmap
+```
