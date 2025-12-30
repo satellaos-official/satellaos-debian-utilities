@@ -63,7 +63,7 @@ rm -rf "$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
 
 # Drivers
 
-## AMD GPU
+### AMD GPU
 
 ```bash
 sudo apt update
@@ -71,7 +71,7 @@ sudo apt update
 sudo apt install -y firmware-amd-graphics mesa-vulkan-drivers mesa-va-drivers mesa-vdpau-drivers
 ```
 
-## Intel GPU
+### Intel GPU
 
 ```bash
 sudo apt update
@@ -79,7 +79,7 @@ sudo apt update
 sudo apt install -y firmware-misc-nonfree intel-media-va-driver i965-va-driver mesa-vulkan-drivers mesa-va-drivers mesa-vdpau-drivers
 ```
 
-## Bluetooth
+### Bluetooth
 
 ```bash
 sudo apt update
@@ -92,7 +92,7 @@ sudo systemctl start bluetooth
 systemctl status bluetooth
 ```
 
-## Touchpad
+### Touchpad
 
 ```bash
 sudo mkdir -p /etc/X11/xorg.conf.d
