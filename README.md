@@ -1,4 +1,4 @@
-(English)
+## (English)
 
 # Papirus Color Changer Tool
 
@@ -7,7 +7,7 @@ Just one click and change the papyrus color.
 This script uses the **Papirus Folders** infrastructure.  
 You can access the original project and support it here: [Papirus Folders GitHub](https://github.com/PapirusDevelopmentTeam/papirus-folders)
 
-(Turkish)
+## (Turkish)
 
 # Papirus Renk Değiştirme Aracı
 
