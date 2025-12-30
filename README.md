@@ -66,7 +66,12 @@ rm -rf "$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
 ## AMD GPU
 
 ```bash
+sudo apt update && sudo apt upgrade -y
 
+sudo apt install -y firmware-amd-graphics \
+                    mesa-vulkan-drivers \
+                    mesa-va-drivers \
+                    mesa-vdpau-drivers
 ```
 
 ## Intel GPU
