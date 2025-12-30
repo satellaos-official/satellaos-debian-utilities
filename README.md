@@ -20,6 +20,8 @@ wget -P "$HOME/satellaos-debian-utilities/tools" "https://raw.githubusercontent.
 chmod +x "$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
 
 "$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
+
+rm -rf "$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
 ```
 
 ## Preview
