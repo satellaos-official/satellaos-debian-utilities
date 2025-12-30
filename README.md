@@ -19,7 +19,7 @@ chmod +x "$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
 rm -rf "$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
 ```
 
-# (Turkish)
+# (Türkçe)
 
 ## Papirus Renk Değiştirme Aracı
 
