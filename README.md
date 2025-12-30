@@ -1,7 +1,7 @@
 Just one click and change the papyrus color.
 
 ```bash
-curl -fsSL "https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/tools/Papirus-color-changer%20v2.sh" | sh
+curl -fsSL "https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/tools/Papirus-color-changer%20v2.sh" | bash
 ```
 
 ## Preview
