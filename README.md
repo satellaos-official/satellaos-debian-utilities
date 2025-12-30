@@ -2,8 +2,11 @@ Just one click and change the papyrus color.
 
 ```bash
 mkdir -p "$HOME/satellaos-debian-utilities/tools"
+
 wget -P "$HOME/satellaos-debian-utilities/tools" "https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/tools/Papirus-color-changer-v2.sh"
+
 chmod +x "$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
+
 "$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
 ```
 
