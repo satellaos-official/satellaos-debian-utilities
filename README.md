@@ -1,6 +1,6 @@
-## (English)
+# (English)
 
-# Papirus Color Changer Tool
+## Papirus Color Changer Tool
 
 Just one click and change the papyrus color.
 
@@ -19,9 +19,9 @@ chmod +x "$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
 rm -rf "$HOME/satellaos-debian-utilities/tools/Papirus-color-changer-v2.sh"
 ```
 
-## (Turkish)
+# (Turkish)
 
-# Papirus Renk Değiştirme Aracı
+## Papirus Renk Değiştirme Aracı
 
 Tek bir tıklamayla papirus rengini değiştirin.
 
