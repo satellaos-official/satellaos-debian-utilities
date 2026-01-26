@@ -388,3 +388,13 @@ sudo apt install -y galculator
 ```bash
 sudo apt install gucharmap
 ```
+
+## 28. Gnome Software (Deb)
+
+## 29. Mintstick (Deb)
+
+## 30. Warp VPN
+
+## 31. Disk Usage Analyzer
+
+## 32. Libre Office (Deb)
