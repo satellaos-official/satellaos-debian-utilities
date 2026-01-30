@@ -85,11 +85,12 @@ sudo apt install -y "$HOME/satellaos-packages/google-chrome-stable_current_amd64
 ![2. Opera (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/opera.png)
 
 ```bash
-mkdir -p "$HOME/satellaos-packages"
+wget -qO- https://deb.opera.com/archive.key | gpg --dearmor | sudo tee /usr/share/keyrings/opera-browser.gpg > /dev/null
 
-wget -P "$HOME/satellaos-packages" https://download5.operacdn.com/ftp/pub/opera/desktop/125.0.5729.49/linux/opera-stable_125.0.5729.49_amd64.deb
+echo "deb [signed-by=/usr/share/keyrings/opera-browser.gpg] https://deb.opera.com/opera-stable/ stable non-free" | sudo tee /etc/apt/sources.list.d/opera-archive.list
 
-sudo apt install -y "$HOME/satellaos-packages/opera-stable_125.0.5729.49_amd64.deb"
+sudo apt-get update
+sudo apt-get install opera-stable
 ```
 
 ## 3. Vivaldi (Deb)
@@ -97,11 +98,14 @@ sudo apt install -y "$HOME/satellaos-packages/opera-stable_125.0.5729.49_amd64.d
 ![3. Vivaldi (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/vivaldi.png)
 
 ```bash
-mkdir -p "$HOME/satellaos-packages"
+wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub \
+  | gpg --dearmor | sudo tee /usr/share/keyrings/vivaldi-browser.gpg > /dev/null
 
-wget -P "$HOME/satellaos-packages" https://downloads.vivaldi.com/stable/vivaldi-stable_7.7.3851.66-1_amd64.deb
+echo "deb [signed-by=/usr/share/keyrings/vivaldi-browser.gpg arch=$(dpkg --print-architecture)] https://repo.vivaldi.com/archive/deb/ stable main" \
+  | sudo tee /etc/apt/sources.list.d/vivaldi-archive.list
 
-sudo apt install -y "$HOME/satellaos-packages/vivaldi-stable_7.7.3851.66-1_amd64.deb"
+sudo apt update
+sudo apt install vivaldi-stable
 ```
 
 ## 4. Brave Browser [Deb (Debian, Ubuntu, Mint)]
