@@ -1,3 +1,10 @@
+# SatellaOS ToolBox
+## Bu Script 8 farklı aracı tek tıkla çalıştırmaya yarıyor
+
+```bash
+wget -qO- https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/refs/heads/main/toolbox.sh | bash
+```
+
 # Drivers
 
 ## AMD GPU
