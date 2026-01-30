@@ -2,7 +2,15 @@
 ## Bu Script 8 farklı aracı tek tıkla çalıştırmaya yarıyor
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/refs/heads/main/toolbox.sh | bash
+echo "Downloading SatellaOS Toolbox..."
+
+mkdir -p "$HOME/satellaos"
+
+wget "https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/refs/heads/main/toolbox.sh" -O "$HOME/satellaos/toolbox.sh"
+
+chmod +x "$HOME/satellaos/toolbox.sh"
+
+"$HOME/satellaos/toolbox.sh"
 ```
 
 # Drivers
