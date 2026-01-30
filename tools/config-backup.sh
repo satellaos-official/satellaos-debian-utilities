@@ -2,7 +2,7 @@
 
 set -e
 
-BASE="$HOME/satellaos-installer/configuration"
+BASE="$HOME/satellaos/configuration"
 OWNER="$USER:$USER"
 
 echo "▶ Preparing configuration directory..."
