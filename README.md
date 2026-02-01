@@ -13,6 +13,8 @@ chmod +x "$HOME/satellaos/toolbox.sh"
 "$HOME/satellaos/toolbox.sh"
 ```
 
+---
+
 # Drivers
 
 ## AMD GPU
@@ -189,7 +191,7 @@ Note: All programs are installed using the SatellaOS Program Installer Tool with
 
 ![30. Warp VPN (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/30-Warp-VPN.png)
 
-## 31. Disk Usage Analyzer (Deb)
+## 31. Baobab (Deb)
 
 ![31. Disk Usage Analyzer (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/31-baobab.png)
 
