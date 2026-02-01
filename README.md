@@ -173,7 +173,7 @@ Note: All programs are installed using the SatellaOS Program Installer Tool with
 
 ## 27. Gucharmap (Deb)
 
-![27. Gucharmap (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/gucharmap.png)
+![27. Gucharmap (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/27-Gucharmap.png)
 
 ## 28. Gnome Software (Deb)
 
