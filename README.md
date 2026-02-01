@@ -111,10 +111,15 @@ EOF
 
 ### 🎮 Gaming
 
-| Program | Package | Screenshot                                                                                                      |
-| ------- | ------- | --------------------------------------------------------------------------------------------------------------- |
-| Steam   | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/06-steam.png)  |
-| WineHQ  | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/19-WineHQ.png) |
+| Program          | Package | Screenshot                                                                                                          |
+| ---------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
+| Steam            | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/06-steam.png)      |
+| WineHQ           | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/19-WineHQ.png)     |
+| VirtualBox 7.2.4 | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/12-VirtualBox.png) |
+
+------|--------|-----------|
+| Steam | Deb | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/06-steam.png) |
+| WineHQ | Deb | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/19-WineHQ.png) |
 
 ---
 
@@ -126,18 +131,40 @@ EOF
 | KDiskMark          | Deb / Flatpak | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/10%7C11-KDiskMark.png)     |
 | GParted            | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/21-GParted.png)            |
 | GNOME Disk Utility | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/22-Gnome-Disk-Utility.png) |
-| Baobab             | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/31-baobab.png)             |
+| GNOME Software     | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/28-Gnome-Software.png)     |
+| Mission Center     | Flatpak       | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/20-Mission-Center.png)     |
+| qBittorrent        | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/24-qBittorrent.png)        |
 | Grub Customizer    | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/25-GRUB-Customizer.png)    |
+| Baobab             | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/31-baobab.png)             |
+| Galculator         | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/26-Galculator.png)         |
+| Gucharmap          | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/27-Gucharmap.png)          |
+| Mintstick          | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/29-Mintstick-1.png)        |
+| Warp VPN           | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/30-Warp-VPN.png)           |
+
+------|--------|-----------|
+| LocalSend | Deb / Flatpak | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/08%7C09-LocalSend.png) |
+| KDiskMark | Deb / Flatpak | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/10%7C11-KDiskMark.png) |
+| GParted | Deb | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/21-GParted.png) |
+| GNOME Disk Utility | Deb | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/22-Gnome-Disk-Utility.png) |
+| Baobab | Deb | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/31-baobab.png) |
+| Grub Customizer | Deb | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/25-GRUB-Customizer.png) |
 
 ---
 
 ### 🎨 Graphics & Media
 
-| Program | Package       | Screenshot                                                                                                         |
-| ------- | ------------- | ------------------------------------------------------------------------------------------------------------------ |
-| GIMP    | Deb / Flatpak | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/13%7C14-GIMP.png) |
-| Pinta   | Flatpak       | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/15-Pinta.png)     |
-| VLC     | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/23-VLC.png)       |
+| Program               | Package       | Screenshot                                                                                                                     |
+| --------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| GIMP                  | Deb / Flatpak | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/13%7C14-GIMP.png)             |
+| Pinta                 | Flatpak       | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/15-Pinta.png)                 |
+| PowerISO              | Flatpak       | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/16-PowerISO.png)              |
+| VLC                   | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/23-VLC.png)                   |
+| Free Download Manager | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/07-Free-Download-Manager.png) |
+
+------|--------|-----------|
+| GIMP | Deb / Flatpak | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/13%7C14-GIMP.png) |
+| Pinta | Flatpak | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/15-Pinta.png) |
+| VLC | Deb | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/23-VLC.png) |
 
 ---
 
