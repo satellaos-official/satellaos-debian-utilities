@@ -2,7 +2,7 @@
 
 > **One-click utility toolbox for SatellaOS (Debian-based systems)**
 
-SatellaOS ToolBox is a simple shell-based utility that allows you to install **drivers**, **system tweaks**, and **popular applications** with a single command. It is designed to be **clean**, **minimal**, and **beginner-friendly**, while still giving power users full control.
+SatellaOS ToolBox is a shell-based utility that brings together configuration tools, system helpers, and program installers under a single interface. It focuses on simplicity, safety, and user control, making common system tasks faster without hiding what happens in the background.
 
 ---
 
