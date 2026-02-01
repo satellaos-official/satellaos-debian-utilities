@@ -113,7 +113,7 @@ Note: All programs are installed using the SatellaOS Program Installer Tool with
 
 ## 12. VirtualBox 7.2.4 (Deb)
 
-![12. VirtualBox 7.2.4 (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/virtualbox.png)
+![12. VirtualBox 7.2.4 (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/12-VirtualBox.png)
 
 ## 13. GIMP (Deb)
 
