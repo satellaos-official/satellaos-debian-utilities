@@ -1,12 +1,22 @@
-# SatellaOS ToolBox
-## Bu Script 8 farklı aracı tek tıkla çalıştırmaya yarıyor
+# 🟣 SatellaOS ToolBox
+
+> **One-click utility toolbox for SatellaOS (Debian-based systems)**
+
+SatellaOS ToolBox is a simple shell-based utility that allows you to install **drivers**, **system tweaks**, and **popular applications** with a single command. It is designed to be **clean**, **minimal**, and **beginner-friendly**, while still giving power users full control.
+
+---
+
+## 🚀 Quick Start
+
+Run the following commands to download and launch the SatellaOS ToolBox:
 
 ```bash
-echo "Downloading SatellaOS Toolbox..."
+echo "Downloading SatellaOS ToolBox..."
 
 mkdir -p "$HOME/satellaos"
 
-wget "https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/refs/heads/main/toolbox.sh" -O "$HOME/satellaos/toolbox.sh"
+wget "https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/refs/heads/main/toolbox.sh" \
+  -O "$HOME/satellaos/toolbox.sh"
 
 chmod +x "$HOME/satellaos/toolbox.sh"
 
@@ -15,29 +25,46 @@ chmod +x "$HOME/satellaos/toolbox.sh"
 
 ---
 
-# Drivers
+## 🧩 Included Features
 
-## AMD GPU
+* GPU drivers (AMD / Intel)
+* Bluetooth setup
+* Touchpad configuration
+* Program installer (Deb & Flatpak)
+* Beginner-safe defaults
+
+---
+
+## 🖥️ Drivers
+
+### 🔴 AMD GPU
 
 ```bash
 sudo apt update
-
-sudo apt install -y firmware-amd-graphics mesa-vulkan-drivers mesa-va-drivers mesa-vdpau-drivers
+sudo apt install -y \
+  firmware-amd-graphics \
+  mesa-vulkan-drivers \
+  mesa-va-drivers \
+  mesa-vdpau-drivers
 ```
 
-## Intel GPU
+### 🔵 Intel GPU
 
 ```bash
 sudo apt update
-
-sudo apt install -y firmware-misc-nonfree intel-media-va-driver i965-va-driver mesa-vulkan-drivers mesa-va-drivers mesa-vdpau-drivers
+sudo apt install -y \
+  firmware-misc-nonfree \
+  intel-media-va-driver \
+  i965-va-driver \
+  mesa-vulkan-drivers \
+  mesa-va-drivers \
+  mesa-vdpau-drivers
 ```
 
-## Bluetooth
+### 🔷 Bluetooth
 
 ```bash
 sudo apt update
-
 sudo apt install -y bluetooth bluez blueman
 
 sudo systemctl enable bluetooth
@@ -46,7 +73,9 @@ sudo systemctl start bluetooth
 systemctl status bluetooth
 ```
 
-## Touchpad
+### 🖱️ Touchpad (libinput)
+
+Enables **tap-to-click** for laptops:
 
 ```bash
 sudo mkdir -p /etc/X11/xorg.conf.d
@@ -64,149 +93,82 @@ EOF
 
 ---
 
+## 📦 Programs
 
-# Programs
+> **Note:** All programs listed below are installed using the **SatellaOS Program Installer Tool** inside SatellaOS ToolBox.
 
-Note: All programs are installed using the SatellaOS Program Installer Tool within the SatellaOS ToolBox utility. 
+### 🌐 Browsers
 
-## 1. Google Chrome (Deb)
+| Program       | Package | Screenshot                                                                                                           |
+| ------------- | ------- | -------------------------------------------------------------------------------------------------------------------- |
+| Google Chrome | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/01-Chrome.png)      |
+| Opera         | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/02-Opera.png)       |
+| Vivaldi       | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/03-Vivaldi.png)     |
+| Brave Browser | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/04-Brave.png)       |
+| Firefox ESR   | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/05-Firefox-ESR.png) |
 
-![1. Google Chrome (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/01-Chrome.png)
+---
 
-## 2. Opera (Deb)
+### 🎮 Gaming
 
-![2. Opera (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/02-Opera.png)
+| Program | Package | Screenshot                                                                                                      |
+| ------- | ------- | --------------------------------------------------------------------------------------------------------------- |
+| Steam   | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/06-steam.png)  |
+| WineHQ  | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/19-WineHQ.png) |
 
-## 3. Vivaldi (Deb)
+---
 
-![3. Vivaldi (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/03-Vivaldi.png)
+### 🧰 Utilities
 
-## 4. Brave Browser (Deb)
+| Program            | Package       | Screenshot                                                                                                                  |
+| ------------------ | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| LocalSend          | Deb / Flatpak | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/08%7C09-LocalSend.png)     |
+| KDiskMark          | Deb / Flatpak | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/10%7C11-KDiskMark.png)     |
+| GParted            | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/21-GParted.png)            |
+| GNOME Disk Utility | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/22-Gnome-Disk-Utility.png) |
+| Baobab             | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/31-baobab.png)             |
+| Grub Customizer    | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/25-GRUB-Customizer.png)    |
 
-![4. Brave Browser (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/04-Brave.png)
+---
 
-## 5. Firefox ESR (Deb)
+### 🎨 Graphics & Media
 
-![5. Firefox ESR (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/05-Firefox-ESR.png)
+| Program | Package       | Screenshot                                                                                                         |
+| ------- | ------------- | ------------------------------------------------------------------------------------------------------------------ |
+| GIMP    | Deb / Flatpak | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/13%7C14-GIMP.png) |
+| Pinta   | Flatpak       | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/15-Pinta.png)     |
+| VLC     | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/23-VLC.png)       |
 
-## 6. Steam (Deb)
+---
 
-![6. Steam (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/06-steam.png)
+### 📝 Office & Development
 
-## 7. Free Download Manager (Deb)
+| Program           | Package | Screenshot                                                                                                            |
+| ----------------- | ------- | --------------------------------------------------------------------------------------------------------------------- |
+| LibreOffice Suite | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/32-Libreoffice.png)  |
+| Sublime Text      | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/18-Sublime-Text.png) |
+| MenuLibre         | Deb     | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/17-MenuLibre.png)    |
 
-![7. Free Download Manager (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/07-Free-Download-Manager.png)
+---
 
-## 8. LocalSend (Deb)
+## 🧠 Philosophy
 
-![8. LocalSend (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/08%7C09-LocalSend.png)
+SatellaOS ToolBox follows three core principles:
 
-## 9. LocalSend (Flatpak)
+* **Minimal but practical**
+* **No unnecessary automation**
+* **User always stays in control**
 
-![9. LocalSend (Flatpak)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/08%7C09-LocalSend.png)
+If something can be done with a clean shell script, it should be.
 
-## 10. KDiskMark (Deb)
+---
 
-![10. KDiskMark (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/10%7C11-KDiskMark.png)
+## ⭐ Contributing
 
-## 11. KDiskMark (Flatpak)
+Pull requests and suggestions are welcome.
 
-![11. KDiskMark (Flatpak)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/10%7C11-KDiskMark.png)
+If you like the project, don’t forget to ⭐ the repository.
 
-## 12. VirtualBox 7.2.4 (Deb)
+---
 
-![12. VirtualBox 7.2.4 (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/12-VirtualBox.png)
-
-## 13. GIMP (Deb)
-
-![13. GIMP (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/13%7C14-GIMP.png)
-
-## 14. GIMP (Flatpak)
-
-![14. GIMP (Flatpak)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/13%7C14-GIMP.png)
-
-## 15. Pinta (Flatpak)
-
-![15. Pinta (Flatpak)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/15-Pinta.png)
-
-## 16. PowerISO (Flatpak)
-
-![16. PowerISO (Flatpak)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/16-PowerISO.png)
-
-## 17. MenuLibre (Deb)
-
-![17. MenuLibre (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/17-MenuLibre.png)
-
-## 18. Sublime Text (Deb)
-
-![18. Sublime Text (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/18-Sublime-Text.png)
-
-## 19. WineHQ (Deb)
-
-![19. WineHQ (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/19-WineHQ.png)
-
-## 20. Mission Center (Flatpak)
-
-![20. Mission Center (Flatpak)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/20-Mission-Center.png)
-
-## 21. GParted (Deb)
-
-![21. GParted (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/21-GParted.png)
-
-## 22. Gnome Disk Utility (Deb)
-
-![22. Gnome Disk Utility (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/22-Gnome-Disk-Utility.png)
-
-## 23. VLC (Deb)
-
-![23. VLC (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/23-VLC.png)
-
-## 24. qBittorrent (Deb)
-
-![24. qBittorrent (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/24-qBittorrent.png)
-
-## 25. Grub Customizer (Deb)
-
-![25. Grub Customizer (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/25-GRUB-Customizer.png)
-
-## 26. Galculator (Deb)
-
-![26. Galculator (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/26-Galculator.png)
-
-## 27. Gucharmap (Deb)
-
-![27. Gucharmap (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/27-Gucharmap.png)
-
-## 28. Gnome Software (Deb)
-
-![28. Gnome Software (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/28-Gnome-Software.png)
-
-## 29. Mintstick (Deb)
-
-![29. Mintstick (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/29-Mintstick-1.png)
-
-![29. Mintstick (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/29-Mintstick-2.png)
-
-## 30. Warp VPN (Deb)
-
-![30. Warp VPN (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/30-Warp-VPN.png)
-
-## 31. Baobab (Deb)
-
-![31. Disk Usage Analyzer (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/31-baobab.png)
-
-## 32. Libre Office (Deb)
-
-![32. Libre Office (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/32-Libreoffice-base.png)
-
-![32. Libre Office (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/32-Libreoffice-calc.png)
-
-![32. Libre Office (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/32-Libreoffice-draw.png)
-
-![32. Libre Office (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/32-Libreoffice-impress.png)
-
-![32. Libre Office (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/32-Libreoffice-math.png)
-
-![32. Libre Office (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/32-Libreoffice-writer.png)
-
-![32. Libre Office (Deb)](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/32-Libreoffice.png)
+**SatellaOS — clean, calm, and under your control.**
