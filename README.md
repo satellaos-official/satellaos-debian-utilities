@@ -129,7 +129,7 @@ The **first 5 entries are web browsers** by design.
 | Grub Customizer       | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/25-GRUB-Customizer.png)       |
 | Gucharmap             | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/27-Gucharmap.png)             |
 | KDiskMark             | Deb / Flatpak | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/10%7C11-KDiskMark.png)        |
-| LibreOffice Suite     | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/32-Libreoffice.png)           |
+| LibreOffice           | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/32-Libreoffice.png)           |
 | LocalSend             | Deb / Flatpak | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/08%7C09-LocalSend.png)        |
 | MenuLibre             | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/17-MenuLibre.png)             |
 | Mintstick             | Deb           | ![](https://raw.githubusercontent.com/satellaos-official/satellaos-debian-utilities/main/app-png/29-Mintstick-1.png)           |
